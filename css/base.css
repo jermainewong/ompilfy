@@ -1,0 +1,11 @@
+a:hover{
+	text-decoration: none;
+}
+
+li a{
+	color: #f3f3f3;
+}
+
+li a:hover{
+	color: #25282A;
+}
