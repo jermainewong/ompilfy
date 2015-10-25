@@ -130,15 +130,15 @@ header{
 }   
    
 .about .icons-row{
-	display: block;
-	width: 850px;
+	display: inline-block;
+	width: 90%;
 	margin: 30px auto;
 }
 
 .about .icons{
+	width: 10%;
 	float: left;
-	margin-right: 40px;
-	text-align: center;
+	margin-right: 8%;	
 }
 
 .about .icons:last-child{
@@ -308,6 +308,9 @@ footer a:hover{
 	}
 	.intro .col-sm-4{
 		text-align: left;
+	}
+	.about .icons-row{
+		display: none;
 	}
 	.work-2 img{
 		width: 100%;
