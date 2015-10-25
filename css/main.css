@@ -10,7 +10,6 @@
     padding: 0.2em 0;
 }
 
-
 /* --------------------------------------------------------------------------
    Main styles
    -------------------------------------------------------------------------- */
@@ -18,48 +17,57 @@
 	background: #f3f3f3;
 }
 
-.bkg-yellow{
-	background: #ffffec;
-}
-
-/* --------------------------------------------------------------------------
-   To be deleted
-   -------------------------------------------------------------------------- */
-   
 body{
 	overflow-x: hidden;
 }
-     
-section{
-	min-height: 600px;
-	padding: 50px 0px 0px 0px;
-}
 
+    
+
+  
+   
+
+/* --------------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------------- */
+   
 header{
-	min-height: 600px;
-	padding: 50px 0px;
-	
+	height: 650px;
+}   
+
+ 
+   
+   
+.logo{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 22px;
 }
 
-footer{
-	height: 500px;
+.hero-txt{
+	margin: 100px 0px;
+	font-size: 64px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	z-index: 30;
 }
 
-
-
+header img{
+	position: absolute; 
+	top: 60px;
+	left: 350px;
+}
 
 
 
 
 /* --------------------------------------------------------------------------
-   Hero, Intro section
+   Slant Interims
    -------------------------------------------------------------------------- */
+.position-rel{
+	position: relative;
+}
 
-
-
-
-
-.test:before{
+.slant:before{
 	background: #fff;
 	content: "";
 	display: block;
@@ -70,46 +78,79 @@ footer{
 	transform: rotate(-5deg) translateX(-50%);
 	transform-origin: center top 0;
 	width: 120%;
-	z-index: 150;
+	z-index: 5;
+}
+
+.interim-title{
+	width: 100%;
+	position: absolute;
+	bottom: 75px;
+	text-align: center;
+	z-index: 10;
+}
+
+.interim-title span{
+	font-size: 44px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
 }
 
 
 
 
+.interim-title-test{
+	width: 100%;
+	position: absolute;
+	bottom: -155px;
+	text-align: center;
+	z-index: 10;
+}
 
 
+.interim-title-test span{
+	font-size: 44px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.overlay{
+	z-index: 20;
+} 
 
 
 /* --------------------------------------------------------------------------
    Profile Section
    -------------------------------------------------------------------------- */
+   
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+.about{
+	margin-bottom: 180px;
+}   
+   
+   
+   
+   
+.about h2{
+	margin: 0px;
+	font-size: 36px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+}   
+   
 .about .icons-row{
 	display: block;
 	width: 850px;
-	margin: 0px auto;
+	margin: 30px auto;
 }
 
 .about .icons{
@@ -131,7 +172,7 @@ footer{
 }
 
 .intro .col-xs-4{
-	font-family: 'Georgia', serif;
+	font-family: 'Mate', serif;
 	text-align: right;
 	font-size: 24px;
 	line-height: 36px;
@@ -139,7 +180,7 @@ footer{
 
 .intro .col-xs-8 p{
 	color: #aaa;
-	font-family: 'Georgia', serif;
+	font-family: 'Mate', serif;
 	font-size: 16px;
 	line-height: 34px;
 	-webkit-column-count: 2; 
@@ -164,27 +205,64 @@ footer{
    Portfolio section
    -------------------------------------------------------------------------- */
 
+/* Main Styles */
+
 .work-intro{
 	margin: 50px 0px;
 	text-align: center;
 }
 
-.work-intro span{
-	font-style: italic;
+.work-intro h2{
+	font-size: 28px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
 }
 
+.work-intro p{
+	font-family: 'Mate', serif;
+	font-size: 15px;
+	line-height: 1.6em;
+	color: #999;
+}
 
+.divider{
+	display: block;
+	margin: 30px auto 30px auto;
+	width: 80px;
+	border-bottom: solid 1px #ccc;
+}
 
-.work-img img{
+/* Work 1: RGF Singapore */
+
+.work-1{
+	padding-top: 120px;
+}
+
+.work-1 p{
+	padding: 0px 220px;
+}
+
+.work-1 img{
+	display: block;
+	width: 90%;
+	margin: 0px auto;
+}
+
+/* Work 2: PTGC */
+
+.work-2{
+	padding: 120px 0px;
+}
+
+/* Work 2: jermainewong */
+
+.work-3{
+	padding: 100px 0px 350px 0px;
+}
+
+.work-3 img{
 	width: 100%;
 }
-
-
-
-
-
-
-
 
 
 
@@ -211,12 +289,25 @@ footer{
 
 
 
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
 
+footer{
+	height: 320px;
+}
 
+footer a{
+	display: inline-block;
+	padding: 50px 0px 20px 0px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 36px;
+	color: #030303;
+}
 
-
-
-
+footer a:hover{
+	color: #b99867;
+}
 
 
 
