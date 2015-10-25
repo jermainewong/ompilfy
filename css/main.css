@@ -21,21 +21,15 @@ body{
 	overflow-x: hidden;
 }
 
-    
-
-  
-   
-
 /* --------------------------------------------------------------------------
    Hero
    -------------------------------------------------------------------------- */
    
 header{
 	height: 650px;
-}   
-
- 
-   
+	background: url('../img/bkg-hero.png') no-repeat center center fixed;
+	background-size: cover;
+}     
    
 .logo{
 	font-family: 'Josefin Sans', sans-serif;
@@ -45,19 +39,22 @@ header{
 
 .hero-txt{
 	margin: 100px 0px;
-	font-size: 64px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 700;
 	z-index: 30;
 }
 
-header img{
-	position: absolute; 
-	top: 60px;
-	left: 350px;
+.hero-txt h1{
+	margin: 0px;
+	font-size: 64px;
+	font-family: 'Forum', cursive;
+	font-weight: 700;
 }
 
-
+.hero-txt h2{
+	margin-top: 10px;
+	font-size: 34px;
+	font-family: 'Forum', cursive;
+	font-weight: 700;
+}
 
 
 /* --------------------------------------------------------------------------
@@ -76,7 +73,11 @@ header img{
 	position: absolute;
 	bottom: 0;
 	transform: rotate(-5deg) translateX(-50%);
+	-ms-transform: rotate(-5deg) translateX(-50%); 
+    -webkit-transform: rotate(-5deg) translateX(-50%);
 	transform-origin: center top 0;
+	-ms-transform-origin: center top 0;
+	-webkit-transform-origin: center top 0;
 	width: 120%;
 	z-index: 5;
 }
@@ -95,10 +96,7 @@ header img{
 	font-weight: 700;
 }
 
-
-
-
-.interim-title-test{
+.interim-title-work{
 	width: 100%;
 	position: absolute;
 	bottom: -155px;
@@ -106,13 +104,11 @@ header img{
 	z-index: 10;
 }
 
-
-.interim-title-test span{
+.interim-title-work span{
 	font-size: 44px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 700;
 }
-
 
 .overlay{
 	z-index: 20;
@@ -121,24 +117,10 @@ header img{
 
 /* --------------------------------------------------------------------------
    Profile Section
-   -------------------------------------------------------------------------- */
-   
-  
-   
-   
-   
-   
-   
-   
-   
-   
-   
+   -------------------------------------------------------------------------- */   
 .about{
 	margin-bottom: 180px;
 }   
-   
-   
-   
    
 .about h2{
 	margin: 0px;
@@ -171,14 +153,14 @@ header img{
 	font-weight: bold;
 }
 
-.intro .col-xs-4{
+.intro .col-sm-4{
 	font-family: 'Mate', serif;
 	text-align: right;
 	font-size: 24px;
 	line-height: 36px;
 }
 
-.intro .col-xs-8 p{
+.intro .col-sm-8 p{
 	color: #aaa;
 	font-family: 'Mate', serif;
 	font-size: 16px;
@@ -187,19 +169,6 @@ header img{
     -moz-column-count: 2; 
     column-count: 2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* --------------------------------------------------------------------------
    Portfolio section
@@ -264,15 +233,6 @@ header img{
 	width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
 /* --------------------------------------------------------------------------
    Button
    -------------------------------------------------------------------------- */
@@ -285,14 +245,9 @@ header img{
 	color: #030303;
 }
 
-
-
-
-
 /* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */
-
 footer{
 	height: 320px;
 }
@@ -309,14 +264,68 @@ footer a:hover{
 	color: #b99867;
 }
 
-
-
 /* --------------------------------------------------------------------------
    Media Queries for Responsive Design.
    -------------------------------------------------------------------------- */
 
+@media screen and (max-width: 1000px){
+	.work-1 p{
+		padding: 0px 120px;
+	}
+}
 
 
+@media screen and (max-width: 768px){
+	.work-2 img{
+		width: 100%;
+	}
+	.interim-title{
+		bottom: 95px;
+	}
+	.interim-title-work{
+		bottom: -135px;
+	}
+	.work-2{
+		padding: 60px 0px;
+	}
+	.work-3{
+		padding-top: 60px;
+	}
+}
 
-
-
+@media screen and (max-width: 500px){
+	.work-1 p{
+		padding: 0px 20px;
+	}
+	.intro .col-sm-8 p{
+		line-height: 1.6em;
+		-webkit-column-count: 1; 
+	    -moz-column-count: 1; 
+	    column-count: 1;
+	}
+	.icons-row{
+		display: none !important;
+	}
+	.intro .col-sm-4{
+		text-align: left;
+	}
+	.work-2 img{
+		width: 100%;
+	}
+	.interim-title{
+		bottom: 115px;
+	}
+	.interim-title-work{
+		bottom: -115px;
+	}
+	.hero-txt h1{
+		font-size: 48px;	
+	}
+	.hero-txt h2{
+		font-size: 24px;
+	}
+	footer a{
+		padding-top: 20px;
+		font-size: 24px;
+	}
+}
